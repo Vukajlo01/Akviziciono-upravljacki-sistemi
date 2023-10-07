@@ -1,0 +1,11 @@
+STA 10
+TCP 25252
+
+
+DO_REG 3 5000 0 0      1 0 DO @USB 1 # # 0 1 1 0 1
+DO_REG 1 5003 0 0      1 0 DO @Uticnica 1 # # 0 1 1 0 1
+DO_REG 1 5004 0 0      1 1 DO @USBC 1 # # 0 1 0 0 1
+HR_INT 1 2000 0 0      100 0 AO @KapacitetBaterije 1 1 0 0 100 # 10 100
+DO_REG 1 4000 0 0      1 1 DO @StanjePrvogNapajanja 1 # # 0 1 0 0 1
+DO_REG 1 4001 0 0      1 0 DO @StanjeDrugogNapajanja 1 # # 0 1 1 0 1
+  		 
